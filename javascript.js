@@ -1,24 +1,25 @@
 let myArray = ["hello", "is", "it", "me", 45, true, "guff"];
 
-console.log(myArray);
+console.log("orignal Array: ", myArray);
 
-myArray.pop();
+console.log("last item on Array: ", myArray.pop());
 
-console.log(myArray);
+console.log("array with removed last item: ", myArray);
 
 myArray.unshift("guff");
 
-console.log(myArray);
+console.log("New first element in array with .unshift: ", myArray);
 
-myArray.sort();
+console.log("alphabatized Array: ", myArray.sort());
 
-console.log(myArray);
-
-console.log(myArray[4]);
+console.log("third item: ", myArray[4]);
 
 let newArray = myArray.filter(function(remmey) {
     return remmey !== 'it';
 });
 
 console.log(myArray);
+console.log(newArray);
+
+newArray.unshift(newArray.pop());
 console.log(newArray);
