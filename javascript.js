@@ -23,3 +23,7 @@ console.log(newArray);
 
 newArray.unshift(newArray.pop());
 console.log(newArray);
+
+
+let find = newArray.find(item => item === "guff")
+console.log("find item: ", find)
