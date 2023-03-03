@@ -30,11 +30,40 @@ console.log("find item: ", find)
 
 const array = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-]
+];
+
+let pairs;
 
 function shuffle(array) {
     array.sort(() => Math.random() - 0.5);
+    pairs = array.concat(array);
 }
 
 shuffle(array);
 console.log(array);
+console.log(pairs);
+
+let a = 5
+let b = 5
+
+function checkPair() {
+    if (a === b){
+        console.log("yes")
+    } else if (a != b) {
+        console.log("no")
+    }
+
+}
+
+checkPair()
+
+function splitBillEven(check, people) {
+    let tip = (check / 10) * 2;
+    console.log("this is the total tip: ", tip);
+    let split = (check / people) + tip;
+    console.log("this is what each person pays: ", split)
+}
+
+splitBillEven(350.75, 8);
+
+
