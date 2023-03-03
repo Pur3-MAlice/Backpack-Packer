@@ -27,3 +27,14 @@ console.log(newArray);
 
 let find = newArray.find(item => item === "guff")
 console.log("find item: ", find)
+
+const array = [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+]
+
+function shuffle(array) {
+    array.sort(() => Math.random() - 0.5);
+}
+
+shuffle(array);
+console.log(array);
