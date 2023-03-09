@@ -52,21 +52,20 @@ function checkPair() {
     } else if (a != b) {
         console.log("no")
     }
-
 }
 
 checkPair()
 
 //things to consider. What if people don't want to split evenly. What if they don't want to give 20% tip. What if the tip was included?
 
-function splitBillEven(check, people) {
-    const tip = (check / 10) * 2;
-    console.log("this is the total tip: ", tip);
+function splitBillEven(check, people, percentage) {
+    const tip = check * (percentage / 100);
+    console.log("this is the total tip: ", tip.toFixed(2));
     let split = (check / people) + tip;
-    console.log("this is what each person pays: ", split)
+    console.log("this is what each person pays: ", split.toFixed(2))
 }
 
-splitBillEven(350.75, 8);
+splitBillEven(350.75, 8, 10);
 
 //people would have to be self administerd for spliting the bills per item
 
