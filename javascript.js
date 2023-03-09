@@ -78,3 +78,10 @@ function splitBillJustMe(check, food, drink, people) {
 
 
  splitBillJustMe(350.75, 55.34, 15.4, 18)
+
+
+// event listeners testing 
+
+container.addEventListener{
+    
+}
